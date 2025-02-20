@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentor-Mentee Portal</title>
+    <link rel="stylesheet" href="styles1.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="landing1.png" alt="Medi-Caps University">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#developers">Developers</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <img src="loginbg.webp" alt="Medi-Caps" id="hero-bg">
+        <div class="hero-content">
+            <h2>Welcome to</h2>
+            <h1>MENTOR-MENTEE</h1>
+            <h2>Portal</h2>
+            <button class="btn">LOGIN</button>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <img src="student.png" alt="group" class="group-img">
+                <div class="group-container">
+                    <h2>About Mentor-Mentee Program</h2>
+                    <p>At Medi-Caps University, students are seeds nurtured by mentors' care. Extending this philosophy Mentor-mentee portal is a digital space designed to strengthen the bond between mentors and mentees, ensuring every student receives the guidance they need to thrive.</p>
+                </div>
+            </div>
+            <div class="about-details">
+                <div class="group-container">
+                    <h2>Mentor</h2>
+                    <p>A mentor is a lighthouse, guiding students through the turbulent waters of academia and career-building. With their experience and wisdom, they illuminate paths, offer support, and empower mentees to navigate challenges, bridging the gap between learning and practical application.</p>
+                </div>
+                <div class="group-container">
+                    <h2>Mentee</h2>
+                    <p>A mentee is a sponge, eager to absorb knowledge and wisdom from their mentor. Driven by curiosity and ambition, they actively seek guidance to refine their skills, unlock potential, and transform aspirations into achievements under the mentor's steady guidance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats">
+        <div class="container">
+            <div class="stat-item">
+                <h1>12,000+</h1>
+                <h5>Mentee</h5>
+            </div>
+            <div class="stat-item">
+                <h1>500+</h1>
+                <h5>Mentor</h5>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="container-fluid py-3">
+        <h2 class="text-center mb-4 fw-bold" style="font-size: 3rem;">
+            Testimonials
+        </h2>
+        <div class="text-center border-line"></div>
+
+        <div class="row align-items-center mt-5">
+            <div class="col-md-5 text-left px-5">
+                <div class="mb-4">
+                    <span class="quote-icon">&#10077;</span>
+                    <h5 class="d-inline-block mx-3 title-text">
+                        What our <br> students have to say
+                    </h5>
+                </div>
+                <p class="mb-4 description-text">
+                    &nbsp;&nbsp;More than 3000 students have been helped by <br> &nbsp;&nbsp;Mentor-Mentee Program.
+                </p>
+            </div>
+
+            <div class="col-md-7 d-flex justify-content-center">
+                <div class="testimonial-carousel">
+                    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="card testimonial-card" style="background-color: #a01212; color: white; width: 100%; font-weight: 400;">
+                                    <div class="card-body">
+                                        <blockquote class="blockquote text-center">
+                                            <p class="mb-3">
+                                                “Studying at WOC is fun, the curriculum is complete, 
+                                                the instructors are competent, and the assignments 
+                                                given are also relevant to the current scope of work.”
+                                            </p>
+                                            <footer class="blockquote-footer" style="color: #fff; font-size: 13px; font-weight: 200;">
+                                                <strong>Resky Fernanda</strong> <br>
+                                                Product Designer at Tokopedia
+                                            </footer>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card testimonial-card" style="background-color: #a01212; color: white; width: 100%;">
+                                    <div class="card-body">
+                                        <blockquote class="blockquote text-center">
+                                            <p class="mb-3">
+                                                “This program changed my life. The guidance from 
+                                                mentors was invaluable.”
+                                            </p>
+                                            <footer class="blockquote-footer" style="color: #fff; font-size: 13px; font-weight: 200;">
+                                                <strong>Jane Doe</strong> <br>
+                                                Software Engineer at Google
+                                            </footer>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card testimonial-card" style="background-color: #a01212; color: white; width: 100%;">
+                                    <div class="card-body">
+                                        <blockquote class="blockquote text-center">
+                                            <p class="mb-3">
+                                                “I gained so much confidence and knowledge through 
+                                                this mentorship program.”
+                                            </p>
+                                            <footer class="blockquote-footer" style="color: #fff;  font-size: 13px; font-weight: 200;">
+                                                <strong>John Smith</strong> <br>
+                                                Data Scientist at Microsoft
+                                            </footer>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><br><br>
+
+    <section id="developers" class="team">
+        <div class="container">
+            <h2>MEET THE DEVELOPER TEAM</h2>
+            <h6>The students behind the module</h6>
+            <div class="swiper team-swiper">
+                <div class="swiper-wrapper">
+                    <!-- Team member slides will be inserted here by JavaScript -->
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faculty">
+        <div class="container">
+            <h2>FACULTY MENTORS</h2>
+            <div class="swiper faculty-swiper">
+                <div class="swiper-wrapper">
+                    <!-- Faculty mentor slides will be inserted here by JavaScript -->
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <img src="landing1.png" alt="Medi-Caps" class="footer-logo">
+            <hr>
+            <p>Designed and Developed by Developers Community.<br>Medi-Caps University</p>
+        </div>
+    </footer>
+    <div class="footer-copyright">
+        <div class="container">
+            <p>© 2025 Medi-Caps University. All rights reserved.</p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

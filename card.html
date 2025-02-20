@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sliding Cards</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .swiper {
+            width: 80%;
+            padding: 20px;
+        }
+        .swiper-slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card {
+            width: 200px;
+            height: 250px;
+            background: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <!-- 16 Cards -->
+            <div class="swiper-slide"><div class="card">Card 1</div></div>
+            <div class="swiper-slide"><div class="card">Card 2</div></div>
+            <div class="swiper-slide"><div class="card">Card 3</div></div>
+            <div class="swiper-slide"><div class="card">Card 4</div></div>
+            <div class="swiper-slide"><div class="card">Card 5</div></div>
+            <div class="swiper-slide"><div class="card">Card 6</div></div>
+            <div class="swiper-slide"><div class="card">Card 7</div></div>
+            <div class="swiper-slide"><div class="card">Card 8</div></div>
+            <div class="swiper-slide"><div class="card">Card 9</div></div>
+            <div class="swiper-slide"><div class="card">Card 10</div></div>
+            <div class="swiper-slide"><div class="card">Card 11</div></div>
+            <div class="swiper-slide"><div class="card">Card 12</div></div>
+            <div class="swiper-slide"><div class="card">Card 13</div></div>
+            <div class="swiper-slide"><div class="card">Card 14</div></div>
+            <div class="swiper-slide"><div class="card">Card 15</div></div>
+            <div class="swiper-slide"><div class="card">Card 16</div></div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 4,
+            spaceBetween: 10,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+</body>
+</html>

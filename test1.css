@@ -1,0 +1,186 @@
+/* Team and Mentors Sections */
+.team-section,
+.mentors-section {
+    padding: 2rem 0;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.team-container {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.team-carousel {
+    display: flex;
+    gap: 1rem;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.team-card {
+    flex: 0 0 calc(25% - 1rem); /* Show 4 cards at once */
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.card-image {
+    width: 100%;
+    aspect-ratio: 1;
+    background: #666;
+}
+
+.card-content {
+    padding: 1rem;
+    text-align: center;
+}
+
+.card-name {
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+}
+
+.card-position {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.social-link {
+    width: 24px;
+    height: 24px;
+    background: #eee;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    background: white;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.nav-prev { left: 0; }
+.nav-next { right: 0; }
+
+/* Mentors Grid */
+.mentors-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+/* Footer Styles */
+.footer {
+    background: #8B0000;
+    color: white;
+    padding: 2rem 0 0;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo img {
+    height: 60px;
+}
+
+.footer-social {
+    display: flex;
+    gap: 1rem;
+    background: transparent;
+}
+
+.footer-contact {
+    text-align: right;
+    font-size: 0.9rem;
+}
+
+.developer-credit {
+    text-align: center;
+    padding: 1rem;
+    background: #8B0000;
+    color: white;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+}
+
+.copyright {
+    text-align: center;
+    padding: 1rem;
+    background: #1a1a1a;
+    color: white;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .team-card {
+        flex: 0 0 calc(33.33% - 1rem); /* Show 3 cards at once */
+    }
+}
+
+@media (max-width: 768px) {
+    .team-card {
+        flex: 0 0 calc(50% - 1rem); /* Show 2 cards at once */
+    }
+    
+    .mentors-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+    
+    .footer-contact {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .team-card {
+        flex: 0 0 100%; /* Show 1 card at once */
+    }
+    
+    .mentors-grid {
+        grid-template-columns: 1fr;
+    }
+}
